@@ -1,0 +1,462 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta name="description" content="Personal portfolio website">
+
+    <title>My Portfolio</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- Navigation Bar -->
+    <header class="navbar">
+        <div class="container nav-container">
+
+            <a href="#home" class="logo">MyPortfolio</a>
+
+            <nav class="nav-menu">
+                <a href="#home">Home</a>
+                <a href="#about">About</a>
+                <a href="#skills">Skills</a>
+                <a href="#projects">Projects</a>
+                <a href="#education">Education</a>
+                <a href="#certifications">Certifications</a>
+                <a href="#contact">Contact</a>
+            </nav>
+
+            <button id="theme-toggle" class="theme-toggle" aria-label="Toggle theme">
+                🌙
+            </button>
+
+            <button id="menu-toggle" class="menu-toggle" aria-label="Open menu">
+                ☰
+            </button>
+
+        </div>
+    </header>
+
+
+    <!-- Main Content -->
+    <main>
+
+        <!-- Hero Section -->
+        <section id="home" class="hero">
+            <div class="container hero-container">
+
+                <div class="hero-text">
+
+                    <p class="greeting">Hello, I'm</p>
+
+                    <h1>Tallapelli Akshara</h1>
+
+                    <h2>CSE Student & Aspiring Developer</h2>
+
+                    <p class="hero-description">
+                            I'm a Computer Science student passionate about technology,
+    software development, and Artificial Intelligence. I'm
+    continuously learning new skills and building projects to
+    turn ideas into practical applications.
+    </p>
+
+                    <div class="hero-buttons">
+                        <a href="#projects" class="btn primary-btn">
+                            View My Projects
+                        </a>
+
+                        <a href="Resume.pdf" class="btn secondary-btn" target="_blank" rel="noopener noreferrer">
+    View Resume
+</a>
+                    </div>
+
+                </div>
+
+
+                <div class="hero-image">
+
+                    <div class="profile-circle">
+
+    <img
+        id="profile-image"
+        src="images/profile.jpeg"
+        alt="Profile picture"
+    >
+
+</div>
+
+
+<!-- Profile Image Popup -->
+<div id="image-modal" class="image-modal">
+
+    <button id="close-modal" class="close-modal">
+        &times;
+    </button>
+
+    <img
+        id="modal-image"
+        src="images/profile.jpeg"
+        alt="Enlarged profile picture"
+    >
+
+</div>
+
+                </div>
+
+            </div>
+        </section>
+
+
+        <!-- About Section -->
+        <section id="about" class="section">
+            <div class="container">
+
+                <p class="section-label">ABOUT ME</p>
+
+                <h2 class="section-title">Who I Am</h2>
+
+                <div class="about-content">
+
+                    <p>
+                        I am a Computer Science Engineering student with an interest
+    in Artificial Intelligence and software development. I enjoy
+    learning new technologies and building projects that help me
+    improve my practical skills.
+                    </p>
+
+                    <p>
+                         Currently, I am focusing on strengthening my programming and
+    development skills while exploring Artificial Intelligence,
+    APIs, databases, and modern web technologies.
+                    </p>
+
+                </div>
+
+            </div>
+        </section>
+
+
+        <!-- Skills Section -->
+        <section id="skills" class="section">
+            <div class="container">
+
+                <p class="section-label">MY SKILLS</p>
+
+                <h2 class="section-title">Technologies I Work With</h2>
+
+                <div class="skills-grid">
+
+                    <div class="skill-card">
+                        <h3>Programming</h3>
+                        <p>Java, Python</p>
+                    </div>
+
+                    <div class="skill-card">
+                        <h3>Web Development</h3>
+                        <p>HTML, CSS, JavaScript</p>
+                    </div>
+
+                    <div class="skill-card">
+                        <h3>Database</h3>
+                        <p>MySQL, SQL</p>
+                    </div>
+
+                    <div class="skill-card">
+                        <h3>Artificial Intelligence</h3>
+                        <p>AI &amp; Machine Learning - Currently Learning</p>
+                    </div>
+
+                    <div class="skill-card">
+                        <h3>Tools &amp; Version Control</h3>
+                        <p>Git,Github,IntelliJ</p>
+                    </div>
+
+                </div>
+
+            </div>
+        </section>
+<!-- Projects Section -->
+<section id="projects" class="section">
+
+    <div class="container">
+
+        <p class="section-label">MY WORK</p>
+
+        <h2 class="section-title">Featured Projects</h2>
+
+        <div class="projects-grid">
+
+
+            <!-- Project 1: TimeSheet Logger -->
+            <article class="project-card">
+
+                <div class="project-image">
+                    <img
+                        src="images/timesheetlogger.png"
+                        alt="TimeSheet Logger dashboard"
+                    >
+                </div>
+
+                <div class="project-content">
+
+                    <h3>TimeSheet Logger</h3>
+
+                    <p>
+                        A desktop time tracking and management application built
+    with Java and JavaFX to record work hours, manage tasks
+    and projects, generate reports, and provide separate user
+    and admin functionality using MySQL and JDBC.
+                    </p>
+
+                    <div class="project-tags">
+                        <span>Java</span>
+                        <span>JavaFX</span>
+                        <span>MySQL</span>
+                        <span>JDBC</span>
+                    </div>
+
+                    <div class="project-links">
+
+                        <a href="https://github.com/aksharatallapelli/TimeSheetLogger"
+   target="_blank"
+   rel="noopener noreferrer">
+                            GitHub
+                        </a>
+                    </div>
+
+                </div>
+
+            </article>
+
+
+            </div>
+
+    </div>
+
+</section>
+        <!-- Education Section -->
+        <section id="education" class="section">
+            <div class="container">
+
+                <p class="section-label">EDUCATION</p>
+
+                <h2 class="section-title">My Education</h2>
+
+                <div class="education-card">
+
+                    <h3>B.E. — Computer Science and Engineering</h3>
+
+                    <h4>
+        Muffakham Jah College of Engineering and Technology (MJCET)
+    </h4>
+
+                    <p>Affiliated to Osmania University
+                    </p>
+
+                    <span>2024 - 2028</span>
+
+                </div>
+
+            </div>
+        </section>
+
+
+        <!-- Certifications Section -->
+        <section id="certifications" class="section">
+            <div class="container">
+
+                <p class="section-label">CERTIFICATIONS</p>
+
+                <h2 class="section-title">My Certifications</h2>
+
+                <div class="certifications-grid">
+
+                    <div class="certificate-card">
+                        <img
+                        src="images/certificate-achievement.jpeg"
+                        alt="Certificate of Achievement-TimeSheet Logger"
+                        >
+                        <h3>Certificate of Achievement</h3>
+                        <p>First postion - TimeSheet Logger</p>
+
+    <p>
+        Domain: Hospitality, Scheduling and Utilities 
+    </p>
+
+    <p>
+        Muffakham Jah College of Engineering and Technology
+    </p>
+                    </div>
+
+                    <div class="certificate-card">
+                        <img
+        src="images/project-exhibit.jpeg"
+        alt="ADSOPHOS 2K26 Project Exhibit Certificate"
+    >
+
+                        <h3>ADSOPHOS 2K26 Project Exhibit</h3>
+                        <p>Project Exhibit — TimeSheet Logger</p>
+                          <p>
+        Organized by the Information Technology Department
+    </p>
+
+    <p>
+        Muffakham Jah College of Engineering and Technology
+    </p>
+                    </div>
+
+                </div>
+
+            </div>
+        </section>
+<!-- Contact Section -->
+<section id="contact" class="section">
+
+    <div class="container">
+
+        <p class="section-label">CONTACT</p>
+
+        <h2 class="section-title">Let's Connect</h2>
+
+        <div class="contact-container">
+
+
+            <!-- Contact Information -->
+            <div class="contact-info">
+
+                <h3>Get In Touch</h3>
+
+                <p>
+                I'm always open to connecting,discussing projects,learning opportunities,and ideas related to technology and Artificial Intelligence.
+                </p>
+
+
+                <div class="contact-details">
+
+                    <div class="contact-item">
+                        📧
+                        <a href="mailto:aksharatallapelli23@gmail.com">
+    aksharatallapelli23@gmail.com
+</a>
+                    </div>
+
+                    <div class="contact-item">
+                        💻
+                        <a href="https://github.com/aksharatallapelli" target="_blank" rel="noopener noreferrer">
+    GitHub
+</a>
+                    </div>
+
+                    <div class="contact-item">
+                        🔗
+                        <a href="https://www.linkedin.com/in/akshara-tallapelli-574702383" target="_blank" rel="noopener noreferrer">
+    LinkedIn
+</a>
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <!-- Contact Form -->
+            <form
+    class="contact-form"
+    id="contact-form"
+    action="https://formspree.io/f/mqpzdeky"
+    method="POST"
+>
+
+                <div class="form-group">
+
+                    <label for="name">Name</label>
+
+                    <input
+                        type="text"
+                        id="name"
+                        name="name"
+                        placeholder="Your name"
+                    >
+
+                </div>
+
+
+                <div class="form-group">
+
+                    <label for="email">Email</label>
+
+                    <input
+                        type="email"
+                        id="email"
+                        name="email"
+                        placeholder="Your email"
+                    >
+
+                </div>
+
+
+                <div class="form-group">
+
+                    <label for="message">Message</label>
+
+                    <textarea
+                        id="message"
+                        name="message"
+                        placeholder="Write your message..."
+                    ></textarea>
+
+                </div>
+
+
+                <button type="submit">
+                    Send Message
+                </button>
+
+                <p id="form-status"></p>
+
+            </form>
+
+        </div>
+
+    </div>
+
+</section>
+    </main>
+<!--footer-->
+
+<footer class="footer">
+
+    <div class="container footer-container">
+
+        <p>
+            © 2026 Akshara. All rights reserved.
+        </p>
+
+        <div class="footer-links">
+
+            <a href="https://github.com/aksharatallapelli" target="_blank" rel="noopener noreferrer">
+    GitHub
+</a>
+
+<a href="https://www.linkedin.com/in/akshara-tallapelli-574702383" target="_blank" rel="noopener noreferrer">
+    LinkedIn
+</a>
+
+            <a href="#home">Back to Top ↑</a>
+
+        </div>
+
+    </div>
+
+</footer>
+
+    <!-- JavaScript -->
+    <script src="script.js"></script>
+    
+
+</body>
+</html>
