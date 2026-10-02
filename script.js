@@ -134,3 +134,91 @@ contactForm.addEventListener("submit", async function (event) {
     }
 
 });
+// ================================
+// CERTIFICATE VIEW POPUP
+// ================================
+
+const certificateModal =
+    document.getElementById("certificate-modal");
+
+const certificateModalImage =
+    document.getElementById("certificate-modal-image");
+
+const certificateModalTitle =
+    document.getElementById("certificate-modal-title");
+
+const closeCertificateModal =
+    document.getElementById("close-certificate-modal");
+
+const viewCertificateButtons =
+    document.querySelectorAll(".view-certificate-btn");
+
+
+// Open certificate popup
+viewCertificateButtons.forEach((button) => {
+
+    button.addEventListener("click", () => {
+
+        const certificateImage =
+            button.getAttribute("data-certificate");
+
+        const certificateTitle =
+            button.getAttribute("data-title");
+
+        certificateModalImage.src = certificateImage;
+
+        certificateModalImage.alt = certificateTitle;
+
+        certificateModalTitle.textContent = certificateTitle;
+
+        certificateModal.classList.add("active");
+
+        document.body.style.overflow = "hidden";
+    });
+
+});
+
+
+// Close popup using X button
+closeCertificateModal.addEventListener("click", () => {
+
+    certificateModal.classList.remove("active");
+
+    certificateModalImage.src = "";
+
+    document.body.style.overflow = "";
+
+});
+
+
+// Close popup by clicking outside the certificate
+certificateModal.addEventListener("click", (event) => {
+
+    if (event.target === certificateModal) {
+
+        certificateModal.classList.remove("active");
+
+        certificateModalImage.src = "";
+
+        document.body.style.overflow = "";
+    }
+
+});
+
+
+// Close popup using Escape key
+document.addEventListener("keydown", (event) => {
+
+    if (
+        event.key === "Escape" &&
+        certificateModal.classList.contains("active")
+    ) {
+
+        certificateModal.classList.remove("active");
+
+        certificateModalImage.src = "";
+
+        document.body.style.overflow = "";
+    }
+
+});

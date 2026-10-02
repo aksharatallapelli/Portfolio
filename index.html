@@ -300,48 +300,121 @@
             </div>
         </section>
 
-
         <!-- Certifications Section -->
-        <section id="certifications" class="section">
-            <div class="container">
+<section id="certifications" class="section">
 
-                <p class="section-label">CERTIFICATIONS</p>
+    <div class="container">
 
-                <h2 class="section-title">My Certifications</h2>
+        <p class="section-label">CERTIFICATIONS</p>
 
-                <div class="certifications-grid">
+        <h2 class="section-title">My Certifications</h2>
 
-                    <div class="certificate-card">
-                        
-                        <h3>Certificate of Achievement</h3>
-                        <p>First postion - TimeSheet Logger</p>
+        <div class="certifications-grid">
 
-    <p>
-        Domain: Hospitality, Scheduling and Utilities 
-    </p>
+            <!-- TimeSheet Logger Certificate -->
+            <div class="certificate-card">
 
-    <p>
-        Muffakham Jah College of Engineering and Technology
-    </p>
-                    </div>
+                <h3>Certificate of Achievement</h3>
 
-                    <div class="certificate-card">
-                        
-                        <h3>ADSOPHOS 2K26 Project Exhibit</h3>
-                        <p>Project Exhibit — TimeSheet Logger</p>
-                          <p>
-        Organized by the Information Technology Department
-    </p>
+                <p>First Position — TimeSheet Logger</p>
 
-    <p>
-        Muffakham Jah College of Engineering and Technology
-    </p>
-                    </div>
+                <p>
+                    Domain: Hospitality, Scheduling and Utilities
+                </p>
 
-                </div>
+                <p>
+                    Muffakham Jah College of Engineering and Technology
+                </p>
+
+                <button
+                    class="view-certificate-btn"
+                    data-certificate="images/timesheet-certificate.jpeg"
+                    data-title="Certificate of Achievement — TimeSheet Logger">
+                    View Certificate
+                </button>
 
             </div>
-        </section>
+
+
+            <!-- ADSOPHOS Certificate -->
+            <div class="certificate-card">
+
+                <h3>ADSOPHOS 2K26 Project Exhibit</h3>
+
+                <p>Project Exhibit — TimeSheet Logger</p>
+
+                <p>
+                    Organized by the Information Technology Department
+                </p>
+
+                <p>
+                    Muffakham Jah College of Engineering and Technology
+                </p>
+
+                <button
+                    class="view-certificate-btn"
+                    data-certificate="images/adsophos-certificate.jpeg"
+                    data-title="ADSOPHOS 2K26 Project Exhibit">
+                    View Certificate
+                </button>
+
+            </div>
+
+
+            <!-- Tata iQ Certificate -->
+            <div class="certificate-card">
+
+                <h3>GenAI Powered Data Analytics</h3>
+
+                <p>Tata iQ Job Simulation</p>
+
+                <p>
+                    Certificate of Completion
+                </p>
+
+                <p>
+                    Completed October 1, 2026
+                </p>
+
+                <button
+                    class="view-certificate-btn"
+                    data-certificate="images/tata-iq-certificate.jpg"
+                    data-title="Tata iQ — GenAI Powered Data Analytics">
+                    View Certificate
+                </button>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- Certificate Popup -->
+<div id="certificate-modal" class="certificate-modal">
+
+    <button
+        id="close-certificate-modal"
+        class="close-certificate-modal"
+        aria-label="Close certificate">
+        &times;
+    </button>
+
+    <div class="certificate-modal-content">
+
+        <h3 id="certificate-modal-title"></h3>
+
+        <img
+            id="certificate-modal-image"
+            src=""
+            alt="Certificate">
+
+    </div>
+
+</div>
+
 <!-- Contact Section -->
 <section id="contact" class="section">
 
